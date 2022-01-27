@@ -1,0 +1,92 @@
+/* Container navegation */
+@import "../../variablesSass/colores";
+
+.containerNavigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: fixed;
+
+    width: 100%;
+    height: auto;
+
+    padding: 0;
+
+    // background-color: #1a202c9c;
+    background: #0f2027ab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c5364b0, #203a43b6, #0f2027b7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #2c5364dc,
+        #203a43d3,
+        #0f2027d3
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* logo container */
+.containerLogo {
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    width: 2.5rem;
+    height: 100%;
+
+    border: none;
+    margin: 0 1rem;
+
+    cursor: pointer;
+}
+
+.containerLogo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+// Container of navigation buttons
+.containerButtonsNav {
+    height: 100%;
+    width: 50%;
+
+    ul {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+            font-weight: 400;
+            list-style: none;
+
+            a {
+                color: $colorSecundary;
+                text-decoration: none;
+                transition: 0.1s;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+
+            // Style for buttton actived
+            .buttonActive {
+                color: #fff;
+                font-weight: 700;
+            }
+
+            .buttonActive:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .containerButtonsNav {
+        margin-right: 1rem;
+    }
+}

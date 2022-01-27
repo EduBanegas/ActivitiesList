@@ -1,0 +1,108 @@
+@import "../../variablesSass/colores";
+
+.containerHome {
+  height: 100%;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 3rem;
+  padding-bottom: auto;
+
+  h2 {
+    margin-left: 3rem;
+    display: inline-block;
+    text-align: center;
+
+    background-color: $colorButtonPrimary;
+
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .containerCardsActivities {
+    display: grid;
+    padding: 1.5rem 3rem;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    .cardActiv {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
+      background-color: $colorPrimary;
+
+      // border: 2px solid $colorSecundary;
+      border-radius: 1rem;
+      padding: 1rem;
+
+      transition: 0.1s;
+
+      h4 {
+        color: $colorSecundary;
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+
+      h5 {
+        color: #fff;
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+
+      .containerMoreInfoCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2rem;
+
+        .moreInfo {
+          display: flex;
+          flex-direction: column;
+
+          justify-content: center;
+          align-items: center;
+
+          text-align: center;
+
+          h6 {
+            color: $colorSecundary;
+            margin: 0 !important;
+          }
+
+          p {
+            color: #fff;
+          }
+        }
+
+        .icons {
+          width: 2rem;
+        }
+      }
+    }
+
+    .cardActiv:hover {
+      border-radius: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .containerHome {
+    text-align: center;
+  }
+
+  h2 {
+    margin: 1rem 0 !important;
+  }
+
+  .containerCardsActivities {
+    padding: 1.5rem 1rem !important;
+  }
+}
