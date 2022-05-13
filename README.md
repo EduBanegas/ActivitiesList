@@ -1,1 +1,1 @@
-# ActivitiesList https://activitieslist.herokuapp.com/
+ActivitiesList https://activitieslist.herokuapp.com/
