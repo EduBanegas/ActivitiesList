@@ -1,2 +1,2 @@
-Project with: Ruby on rails 
+Project with: Ruby on rails -- 
 ActivitiesList https://activitieslist.herokuapp.com/
